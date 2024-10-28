@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magut - Pijamas</title>
+    <title>Magut Pijamas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <h1>Magut</h1>
-        <nav>
-            <a href="#colecciones">Colecciones</a>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#carrito">Carrito</a>
-        </nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de Magut">
+        </div>
+        <h1>Magut Pijamas</h1>
+        <p>Confort y estilo para tus noches</p>
     </header>
 
-    <section id="colecciones">
-        <h2>Colecciones Nuevas</h2>
-        <!-- Aquí agregar imágenes y descripciones de las colecciones -->
-    </section>
-
-    <section id="catalogo">
-        <h2>Catálogo de Pijamas</h2>
-        <div class="producto" data-nombre="Pijama Estrella" data-precio="20">
-            <img src="pijama1.jpg" alt="Pijama Estrella">
-            <p>Pijama Estrella - $20</p>
-            <button onclick="agregarAlCarrito('Pijama Estrella', 20)">Agregar al Carrito</button>
+    <!-- Sección de Nuevas Colecciones -->
+    <section id="nuevas-colecciones">
+        <h2>Nuevas Colecciones</h2>
+        <div class="colecciones-grid">
+            <div class="coleccion-item">
+                <img src="img/coleccion1.jpg" alt="Colección 1">
+                <p>Colección 1</p>
+            </div>
+            <div class="coleccion-item">
+                <img src="img/coleccion2.jpg" alt="Colección 2">
+                <p>Colección 2</p>
+            </div>
+            <div class="coleccion-item">
+                <img src="img/coleccion3.jpg" alt="Colección 3">
+                <p>Colección 3</p>
+            </div>
+            <div class="coleccion-item">
+                <img src="img/coleccion4.jpg" alt="Colección 4">
+                <p>Colección 4</p>
+            </div>
+            <div class="coleccion-item">
+                <img src="img/coleccion5.jpg" alt="Colección 5">
+                <p>Colección 5</p>
+            </div>
         </div>
-        <!-- Añadir más productos similares -->
     </section>
 
-    <section id="carrito">
-        <h2>Carrito de Compras</h2>
-        <ul id="lista-carrito"></ul>
-        <p id="total"></p>
-        <button onclick="enviarAWhatsApp()">Finalizar Compra en WhatsApp</button>
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para realizar un pedido, añade tus productos al carrito y finaliza tu compra a través de WhatsApp.</p>
+        <a href="https://wa.me/1234567890" class="whatsapp-button">Contactar por WhatsApp</a>
     </section>
 
     <script src="script.js"></script>
